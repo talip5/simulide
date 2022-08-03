@@ -1,0 +1,25 @@
+<circuit type="simulide_1.0" rev="1007" stepSize="1000000" stepsPS="1000000" NLsteps="100000" animate="0" >
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-2" mainComp="false" Show_id="false" Show_Val="false" Pos="568,504" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-2" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="false" Voltage="5 V" />
+
+<item itemtype="Resistor" CircId="Resistor-4" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="660,504" rotation="0" hflip="1" vflip="1" label="Resistor-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="LDR" CircId="LDR-10" mainComp="false" ShowProp="Lux" Show_id="false" Show_Val="true" Pos="612,504" rotation="0" hflip="1" vflip="1" label="LDR-10" idLabPos="-16,-24" labelrot="0" valLabPos="-16,30" valLabRot="0" Lux="0 Lux" Min_Lux="0 Lux" Max_Lux="100 Lux" Dial_Step="10 Lux" Gamma="0.8582" R1="500 Ω" />
+
+<item itemtype="Amperimeter" CircId="Amperimeter-13" mainComp="false" Show_id="false" Show_Val="false" Pos="744,484" rotation="0" hflip="1" vflip="1" label="Amperimeter-13" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" SwitchPins="false" />
+
+<item itemtype="Led" CircId="Led-15" mainComp="false" Show_id="false" Show_Val="false" Pos="752,536" rotation="90" hflip="1" vflip="1" label="Led-15" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-17" mainComp="false" Show_id="false" Show_Val="false" Pos="752,588" rotation="0" hflip="1" vflip="1" label="Ground-17" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="Fixed Voltage-2-outnod" endpinid="LDR-10-lPin" pointList="584,504,596,504" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="LDR-10-rPin" endpinid="Resistor-4-lPin" pointList="628,504,644,504" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Resistor-4-rPin" endpinid="Amperimeter-13-lPin" pointList="676,504,736,504,736,500" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Amperimeter-13-rPin" endpinid="Led-15-lPin" pointList="752,500,752,520" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="Led-15-rPin" endpinid="Ground-17-Gnd" pointList="752,552,752,572" />
+
+</circuit>

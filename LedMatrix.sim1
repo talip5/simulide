@@ -1,0 +1,23 @@
+<circuit type="simulide_1.0" rev="1007" stepSize="1000000" stepsPS="1000000" NLsteps="100000" animate="0" >
+
+<item itemtype="LedMatrix" CircId="LedMatrix-1" mainComp="false" Show_id="false" Show_Val="false" Pos="768,496" rotation="0" hflip="1" vflip="1" label="LedMatrix-1" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Rows="8 _Leds" Cols="8 _Leds" Color="Yellow" Vertical_Pins="false" Threshold="2.4 V" MaxCurrent="0.02 A" Resistance="0.6 Ω" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-2" mainComp="false" Show_id="false" Show_Val="false" Pos="704,508" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-2" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Ground" CircId="Ground-4" mainComp="false" Show_id="false" Show_Val="false" Pos="872,612" rotation="0" hflip="1" vflip="1" label="Ground-4" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="VarResistor" CircId="VarResistor-12" mainComp="false" ShowProp="Value_Ohm" Show_id="false" Show_Val="true" Pos="708,556" rotation="0" hflip="1" vflip="1" label="VarResistor-12" idLabPos="-16,-24" labelrot="0" valLabPos="-16,30" valLabRot="0" Value_Ohm="100 Ω" Min_Resistance="100 Ω" Max_Resistance="1000 Ω" Dial_Step="0 Ω" />
+
+<item itemtype="Node" CircId="Node-15" mainComp="false" Pos="740,496" />
+
+<item itemtype="Connector" uid="Connector-8" startpinid="LedMatrix-1-pinCol0" endpinid="Ground-4-Gnd" pointList="768,568,768,588,872,588,872,596" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="LedMatrix-1-pinRow0" endpinid="Node-15-0" pointList="752,496,740,496" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="VarResistor-12-lPin" endpinid="Fixed Voltage-2-outnod" pointList="692,556,692,532,720,532,720,508" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="VarResistor-12-rPin" endpinid="Node-15-1" pointList="724,556,724,496,740,496" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Node-15-2" endpinid="LedMatrix-1-pinRow1" pointList="740,496,740,504,752,504" />
+
+</circuit>

@@ -1,0 +1,31 @@
+<circuit type="simulide_1.0" rev="1007" stepSize="1000000" stepsPS="1000000" NLsteps="100000" animate="0" >
+
+<item itemtype="Potentiometer" CircId="Potentiometer-2" mainComp="false" ShowProp="Value_Ohm" Show_id="false" Show_Val="true" Pos="580,536" rotation="0" hflip="1" vflip="1" label="Potentiometer-2" idLabPos="-16,-40" labelrot="0" valLabPos="15,-20" valLabRot="0" Resistance="200 Ω" Value_Ohm="198.6 Ω" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-3" mainComp="false" Show_id="false" Show_Val="false" Pos="520,536" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-3" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Resistor" CircId="Resistor-8" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="580,568" rotation="90" hflip="1" vflip="1" label="Resistor-8" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="200 Ω" />
+
+<item itemtype="Ground" CircId="Ground-11" mainComp="false" Show_id="false" Show_Val="false" Pos="580,660" rotation="0" hflip="1" vflip="1" label="Ground-11" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Led" CircId="Led-25" mainComp="false" Show_id="false" Show_Val="false" Pos="632,536" rotation="0" hflip="1" vflip="1" label="Led-25" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Green" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Led" CircId="Led-28" mainComp="false" Show_id="false" Show_Val="false" Pos="580,612" rotation="90" hflip="1" vflip="1" label="Led-25" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Green" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Node" CircId="Node-32" mainComp="false" Pos="580,644" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Fixed Voltage-3-outnod" endpinid="Potentiometer-2-PinA" pointList="536,536,564,536" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="Potentiometer-2-PinM" endpinid="Resistor-8-lPin" pointList="580,552,580,552" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="Potentiometer-2-PinB" endpinid="Led-25-lPin" pointList="596,536,616,536" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="Resistor-8-rPin" endpinid="Led-28-lPin" pointList="580,584,580,596" />
+
+<item itemtype="Connector" uid="Connector-30" startpinid="Led-28-rPin" endpinid="Node-32-0" pointList="580,628,580,644" />
+
+<item itemtype="Connector" uid="Connector-31" startpinid="Led-25-rPin" endpinid="Node-32-1" pointList="648,536,684,536,684,644,580,644" />
+
+<item itemtype="Connector" uid="Connector-33" startpinid="Node-32-2" endpinid="Ground-11-Gnd" pointList="580,644,580,644" />
+
+</circuit>

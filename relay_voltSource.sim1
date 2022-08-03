@@ -1,0 +1,35 @@
+<circuit type="simulide_1.0" rev="1007" stepSize="1000000" stepsPS="1000000" NLsteps="100000" animate="0" >
+
+<item itemtype="RelaySPST" CircId="RelaySPST-1" mainComp="false" ShowProp="Poles" Show_id="false" Show_Val="true" Pos="568,524" rotation="0" hflip="1" vflip="1" label="RelaySPST-1" idLabPos="-16,8" labelrot="0" valLabPos="-19,23" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" Rcoil="1000 Ω" Inductance="0.1 H" IOn="0.02 A" IOff="0.01 A" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-2" mainComp="false" Show_id="false" Show_Val="false" Pos="480,448" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-2" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Resistor" CircId="Resistor-4" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="656,508" rotation="0" hflip="1" vflip="1" label="Resistor-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Led" CircId="Led-5" mainComp="false" Show_id="false" Show_Val="false" Pos="724,508" rotation="0" hflip="1" vflip="1" label="Led-5" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Green" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-9" mainComp="false" Show_id="false" Show_Val="false" Pos="756,568" rotation="0" hflip="1" vflip="1" label="Ground-9" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Voltage Source" CircId="Voltage Source-16" mainComp="false" ShowProp="Value_Volt" Show_id="false" Show_Val="true" Pos="484,596" rotation="0" hflip="1" vflip="1" label="Voltage Source-16" idLabPos="-32,-48" labelrot="0" valLabPos="-8,30" valLabRot="0" Value_Volt="20.475 V" MaxValue="25 V" />
+
+<item itemtype="Amperimeter" CircId="Amperimeter-18" mainComp="false" Show_id="false" Show_Val="false" Pos="668,616" rotation="-180" hflip="-1" vflip="-1" label="Amperimeter-18" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" SwitchPins="false" />
+
+<item itemtype="Node" CircId="Node-21" mainComp="false" Pos="756,508" />
+
+<item itemtype="Connector" uid="Connector-3" startpinid="Fixed Voltage-2-outnod" endpinid="RelaySPST-1-pinP2" pointList="496,448,508,448,508,508,552,508" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="RelaySPST-1-switch0pinN" endpinid="Resistor-4-lPin" pointList="584,508,640,508" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="Resistor-4-rPin" endpinid="Led-5-lPin" pointList="672,508,708,508" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="Voltage Source-16-outPin" endpinid="RelaySPST-1-lPin" pointList="512,612,524,612,524,524,552,524" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="Led-5-rPin" endpinid="Node-21-0" pointList="740,508,756,508" />
+
+<item itemtype="Connector" uid="Connector-19" startpinid="RelaySPST-1-rPin" endpinid="Amperimeter-18-lPin" pointList="584,524,616,524,616,652,660,652,660,632" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="Amperimeter-18-rPin" endpinid="Node-21-1" pointList="676,632,676,648,840,648,840,508,756,508" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Node-21-2" endpinid="Ground-9-Gnd" pointList="756,508,756,552" />
+
+</circuit>

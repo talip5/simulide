@@ -1,0 +1,51 @@
+<circuit type="simulide_1.0" rev="1007" stepSize="1000000" stepsPS="1000000" NLsteps="100000" animate="0" >
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-1" mainComp="false" Show_id="false" Show_Val="false" Pos="412,372" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-1" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Resistor" CircId="Resistor-3" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="480,392" rotation="90" hflip="1" vflip="1" label="Resistor-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="1 kΩ" />
+
+<item itemtype="BJT" CircId="BJT-4" mainComp="false" ShowProp="Gain" Show_id="true" Show_Val="true" Pos="548,448" rotation="0" hflip="1" vflip="1" label="BJT-4" idLabPos="18,0" labelrot="0" valLabPos="-16,20" valLabRot="0" PNP="false" Gain="100" />
+
+<item itemtype="Amperimeter" CircId="Amperimeter-7" mainComp="false" Show_id="false" Show_Val="false" Pos="548,392" rotation="0" hflip="1" vflip="1" label="Amperimeter-7" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" SwitchPins="false" />
+
+<item itemtype="Ground" CircId="Ground-10" mainComp="false" Show_id="false" Show_Val="false" Pos="480,504" rotation="0" hflip="1" vflip="1" label="Ground-10" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Amperimeter" CircId="Amperimeter-29" mainComp="false" Show_id="false" Show_Val="false" Pos="468,448" rotation="0" hflip="1" vflip="1" label="Amperimeter-7" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" SwitchPins="false" />
+
+<item itemtype="Probe" CircId="Probe-32" mainComp="false" Show_id="false" Show_Val="true" Pos="612,408" rotation="-45" hflip="1" vflip="1" label="Probe-32" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="Probe" CircId="Probe-44" mainComp="false" Show_id="false" Show_Val="true" Pos="544,516" rotation="-45" hflip="1" vflip="1" label="Probe-44" idLabPos="16,-16" labelrot="45" valLabPos="16,0" valLabRot="45" ShowVolt="true" Threshold="2.5 V" />
+
+<item itemtype="VarResistor" CircId="VarResistor-54" mainComp="false" ShowProp="Value_Ohm" Show_id="false" Show_Val="true" Pos="408,472" rotation="0" hflip="1" vflip="1" label="VarResistor-54" idLabPos="-16,-24" labelrot="0" valLabPos="-16,30" valLabRot="0" Value_Ohm="1000 kΩ" Min_Resistance="1 kΩ" Max_Resistance="1000 kΩ" Dial_Step="0 Ω" />
+
+<item itemtype="Node" CircId="Node-34" mainComp="false" Pos="556,424" />
+
+<item itemtype="Node" CircId="Node-45" mainComp="false" Pos="508,468" />
+
+<item itemtype="Node" CircId="Node-56" mainComp="false" Pos="436,372" />
+
+<item itemtype="Connector" uid="connector-57" startpinid="Resistor-3-rPin" endpinid="Amperimeter-7-lPin" pointList="480,408,480,412,540,412,540,408" />
+
+<item itemtype="Connector" uid="connector-58" startpinid="Amperimeter-7-rPin" endpinid="Node-34-0" pointList="556,408,556,424" />
+
+<item itemtype="Connector" uid="connector-59" startpinid="Amperimeter-29-rPin" endpinid="Node-45-0" pointList="476,464,476,468,508,468" />
+
+<item itemtype="Connector" uid="connector-60" startpinid="Probe-32-inpin" endpinid="Node-34-1" pointList="596,424,556,424" />
+
+<item itemtype="Connector" uid="connector-61" startpinid="Node-34-2" endpinid="BJT-4-collector" pointList="556,424,556,432" />
+
+<item itemtype="Connector" uid="connector-62" startpinid="Node-45-2" endpinid="BJT-4-base" pointList="508,468,524,468,524,448,532,448" />
+
+<item itemtype="Connector" uid="connector-63" startpinid="Node-45-1" endpinid="Probe-44-inpin" pointList="508,468,508,532,528,532" />
+
+<item itemtype="Connector" uid="connector-64" startpinid="BJT-4-emiter" endpinid="Ground-10-Gnd" pointList="556,464,556,484,480,484,480,488" />
+
+<item itemtype="Connector" uid="connector-65" startpinid="Fixed Voltage-1-outnod" endpinid="Node-56-0" pointList="428,372,436,372" />
+
+<item itemtype="Connector" uid="connector-66" startpinid="VarResistor-54-rPin" endpinid="Amperimeter-29-lPin" pointList="424,472,460,472,460,464" />
+
+<item itemtype="Connector" uid="connector-67" startpinid="Node-56-2" endpinid="Resistor-3-lPin" pointList="436,372,480,372,480,376" />
+
+<item itemtype="Connector" uid="connector-68" startpinid="Node-56-1" endpinid="VarResistor-54-lPin" pointList="436,372,436,424,380,424,380,472,392,472" />
+
+</circuit>

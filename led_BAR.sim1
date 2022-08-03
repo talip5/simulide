@@ -1,0 +1,29 @@
+<circuit type="simulide_1.0" rev="1007" stepSize="1000000" stepsPS="1000000" NLsteps="100000" animate="0" >
+
+<item itemtype="LedBar" CircId="LedBar-1" mainComp="false" Show_id="false" Show_Val="false" Pos="620,456" rotation="0" hflip="1" vflip="1" label="LedBar-1" idLabPos="-16,-44" labelrot="0" valLabPos="-16,-56" valLabRot="0" Size="10 Leds" Color="Green" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-2" mainComp="false" Show_id="false" Show_Val="false" Pos="444,432" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-2" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="false" Voltage="5 V" />
+
+<item itemtype="Resistor" CircId="Resistor-3" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="516,432" rotation="0" hflip="1" vflip="1" label="Resistor-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Ground" CircId="Ground-8" mainComp="false" Show_id="false" Show_Val="false" Pos="740,468" rotation="0" hflip="1" vflip="1" label="Ground-8" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-22" mainComp="false" Pos="684,432" />
+
+<item itemtype="Node" CircId="Node-24" mainComp="false" Pos="552,432" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="LedBar-1-led0-pinN" endpinid="Node-22-0" pointList="636,432,684,432" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="Resistor-3-rPin" endpinid="Node-24-0" pointList="532,432,552,432" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="LedBar-1-led3-pinN" endpinid="Node-22-1" pointList="636,456,684,456,684,432" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="Node-22-2" endpinid="Ground-8-Gnd" pointList="684,432,740,432,740,452" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Fixed Voltage-2-outnod" endpinid="Resistor-3-lPin" pointList="460,432,500,432" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Node-24-2" endpinid="LedBar-1-led0-pinP" pointList="552,432,604,432" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="Node-24-1" endpinid="LedBar-1-led3-pinP" pointList="552,432,552,456,604,456" />
+
+</circuit>

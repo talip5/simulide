@@ -1,0 +1,21 @@
+<circuit type="simulide_1.0" rev="1007" stepSize="1000000" stepsPS="1000000" NLsteps="100000" animate="0" >
+
+<item itemtype="Amperimeter" CircId="Amperimeter-2" mainComp="false" Show_id="false" Show_Val="false" Pos="684,420" rotation="0" hflip="1" vflip="1" label="Amperimeter-2" idLabPos="-24,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" SwitchPins="false" />
+
+<item itemtype="Ground" CircId="Ground-3" mainComp="false" Show_id="false" Show_Val="false" Pos="812,516" rotation="0" hflip="1" vflip="1" label="Ground-3" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-4" mainComp="false" Show_id="false" Show_Val="false" Pos="536,440" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-4" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="false" Voltage="5 V" />
+
+<item itemtype="Led" CircId="Led-5" mainComp="false" Show_id="false" Show_Val="false" Pos="788,448" rotation="0" hflip="1" vflip="1" label="Led-5" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Thermistor" CircId="Thermistor-10" mainComp="false" ShowProp="Temp" Show_id="false" Show_Val="true" Pos="632,540" rotation="0" hflip="1" vflip="1" label="Thermistor-10" idLabPos="-16,-24" labelrot="0" valLabPos="-16,30" valLabRot="0" Temp="200 ºC" Min_Temp="0 ºC" Max_Temp="200 ºC" Dial_Step="0 ºC" B="3455" R25="10000 Ω" />
+
+<item itemtype="Connector" uid="Connector-6" startpinid="Fixed Voltage-4-outnod" endpinid="Amperimeter-2-lPin" pointList="552,440,676,440,676,436" />
+
+<item itemtype="Connector" uid="Connector-9" startpinid="Led-5-rPin" endpinid="Ground-3-Gnd" pointList="804,448,812,448,812,500" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="Amperimeter-2-rPin" endpinid="Thermistor-10-lPin" pointList="692,436,692,504,584,504,584,540,616,540" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="Thermistor-10-rPin" endpinid="Led-5-lPin" pointList="648,540,760,540,760,448,772,448" />
+
+</circuit>
